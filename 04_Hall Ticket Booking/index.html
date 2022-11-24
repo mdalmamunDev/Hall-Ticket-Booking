@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall Ticket Booking</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <div class="movie_select">
+            <p>Pick a movie:</p>
+            <select name="movieSelector" id="">
+                <option value="movie_1">Avengers: Secret War(800tk)</option>
+                <option value="movie_2">The Notebook(400tk)</option>
+                <option value="movie_3">Shang Chi(600tk)</option>
+                <option value="movie_4">Titanic(700tk)</option>
+                <option value="movie_5">Black Panter(700tk)</option>
+            </select>
+        </div> <!-- .movie_select end-->
+        <div class="seats_info">
+            <div>
+                <div class="seat_sample"></div>
+                <span>N/A</span>
+            </div>
+            <div>
+                <div class="seat_sample selected_seat_sample"></div>
+                <span>Selected</span>
+            </div>
+            <div>
+                <div class="seat_sample occupied_seat_sample"></div>
+                <span>Occupied</span>
+            </div>
+        </div> <!-- .seats_info end-->
+        <div class="display"></div>
+        <div class="seats_area">
+            <div class="left_seats_area">
+                <p>Normal</p>
+                <div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                </div>
+                <div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                </div>
+                <div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                </div>
+                <div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                </div>
+                <div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                </div>
+                <div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                </div>
+            </div> <!-- .left_seats_area end-->
+            <div class="madle_seat_area">
+                <p>VIP<span>(20% +)</span></p>
+                <div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                </div>
+                <div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                    <div class="seat occupied_seat"></div>
+                    <div class="seat occupied_seat"></div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                </div>
+                <div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                </div>
+                <div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                </div>
+                <div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                    <div class="seat occupied_seat"></div>
+                    <div class="seat occupied_seat"></div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                </div>
+                <div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                    <div class="seat madle_seat" onclick="selectSeat(event)"></div>
+                    <div class="seat occupied_seat"></div>
+                    <div class="seat occupied_seat"></div>
+                </div>
+            </div> <!-- .madle_seat_area end-->
+            <div class="right_seats_area">
+                <p>Normal</p>
+                <div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                </div>
+                <div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                </div>
+                <div>
+                    <div class="seat occupied_seat"></div>
+                    <div class="seat occupied_seat"></div>
+                </div>
+                <div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                </div>
+                <div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                </div>
+                <div>
+                    <div class="seat occupied_seat"></div>
+                    <div class="seat" onclick="selectSeat(event)"></div>
+                </div>
+            </div> <!-- .right_seats_area end-->
+        </div> <!-- .seats_area end-->
+        <div class="conclution">
+            <p id="conclution_p">You have selected 0 seats for a price of 0tk</p>
+            <button onclick="buyTicket (event)">Buy Seats</button>
+        </div>
+    </div> <!-- .container end-->
+
+    <script src="js/programsheet.js"></script>
+</body>
+</html>
